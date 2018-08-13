@@ -37,7 +37,8 @@ Breadboard for Hands Free Mouse:
 ![Alt text](images/20180802_145228.jpg)
 ![Alt text](images/20180802_145219.jpg)
 ![Alt text](images/20180802_145203.jpg)
-![Alt text](images/DIS schematic_schem.png)
+![Alt text](images/DIS_Schematic_schem.png)
+
 ## 3	Hands Free Mouse Flowchart
 
 ## 5	Value of the Invention
