@@ -34,9 +34,10 @@ The Adafruit Feather 32U4 is a module that can handle many tasks.  This device w
 Breadboard for Hands Free Mouse:
 
 ## 2	Schematic
-![Alt text](20180802_145228.jpg)
-![Alt text](20180802_145219.jpg)
-![Alt text](20180802_145203.jpg)
+![Alt text](images/20180802_145228.jpg)
+![Alt text](images/20180802_145219.jpg)
+![Alt text](images/20180802_145203.jpg)
+![Alt text](images/DIS schematic_schem.png)
 ## 3	Hands Free Mouse Flowchart
 
 ## 5	Value of the Invention
