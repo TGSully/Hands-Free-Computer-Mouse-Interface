@@ -42,7 +42,7 @@ Breadboard for Hands Free Mouse:
 ## 3	Hands Free Mouse Flowchart
 ![Alt text](images/DIS_flowchart.png)
 
-## 5	Value of the Invention
+## 4	Value of the Invention
 This project can provide a world of value to the right user.  A target audience for this hands free mouse would be someone who has limited mobility of their hands or arms.  However, many types of people may find this device useful. 
 Degenerative diseases such as ALS and Parkinson’s affect fine motor skills therefore a device such as this can aide in the the user’s navigation of their computer, phone, and any other Bluetooth LE HID compliant device.  Phone navigation is another technological aspect that can be difficult with limited hand motion.  
 Another implementation of this device would be to extend the mode of operation.  The device could also be attached to the user’s hand or finger.  Any object which can perform pitch and roll can be interfaced with the hands free mouse interface.
@@ -52,7 +52,7 @@ Medical alert systems could utilize this device for monitoring if a patient fall
 Hands Free Mouse Demo Link: <br />
 https://www.youtube.com/watch?v=s068qIjzAFE
 
-# 6	References
+# 5	References
 [1] Gorodnichy, D. and Roth, G. (2004). Nouse ‘use your nose as a mouse’ perceptual vision technology for hands-free games and interfaces. Image and Vision Computing, 22(12), pp.931-942.
 
 [2] Toyama, K. (2018). [online] Available at: https://www.researchgate.net/profile/Kentaro_Toyama/publication/2646708_Look_Ma_-_No_Hands_-_Hands-Free_Cursor_Control_with_Real-Time_3D_Face_Tracking/links/5411e0b40cf2788c4b354ebb.pdf [Accessed 28 Jul. 2018].
