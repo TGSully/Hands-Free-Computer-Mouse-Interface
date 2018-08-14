@@ -16,12 +16,12 @@ Essential mouse commands include clicking, Upward/Downward cursor movements, and
 The MPU6050 is a 9 degree-of-freedom accelerometer and gyroscope made by InvenSense.  The pitch and roll values are calculated from the data sent via I2c to the MSP430.  The pitch pertains to the head tilting back or looking downward, this is the range of a person nodding “Yes”.  This pitch variation will control the up and down movement of the mouse cursor.  Roll pertains to the head tilting left to right.  This roll variation will control the left to right movement of the mouse.  
 
 ## 1.4	MSP430G2553
-The Texas Instrument MSP430G2 series microcontrollers are ready to program right out of the box.  However if a project requires a hardware serial connection, then a few alterations to the board must be made.  First, the TX and RX jumpers in the J3 quadrant must be connected parallel to the dotted line printed on the PCB.  This ensures that hardware serial is activated on the MSP430G2553 Launchpad.
-               
-	Tx and Rx jumper orientation in J3
-Next the jumper for LED2 in junction J3 for port P1.6 should be removed.  If the jumper is not removed, the port P1.6 will be grounded and not function properly. This port is necessary for implementing I2c protocol with the MSP430G2553 launchpad.  Port P1.6 is the clock pulse data and port P1.7 is the data pin for I2c communication.
-                   
-               LED2 jumper removed from P1.6 
+The Texas Instrument MSP430G2 series microcontrollers are ready to program right out of the box.  However if a project requires a hardware serial connection, then a few alterations to the board must be made.  First, the TX and RX jumpers in the J3 quadrant must be connected parallel to the dotted line printed on the PCB.  This ensures that hardware serial is activated on the MSP430G2553 Launchpad. <br />
+![Alt text](images/TXRX_jumper.png)     
+#### Tx and Rx jumper orientation in J3 <br />
+Next the jumper for LED2 in junction J3 for port P1.6 should be removed.  If the jumper is not removed, the port P1.6 will be grounded and not function properly. This port is necessary for implementing I2c protocol with the MSP430G2553 launchpad.  Port P1.6 is the clock pulse data and port P1.7 is the data pin for I2c communication. <br />
+![Alt text](images/J5_jumper.png)           
+#### LED2 jumper removed from P1.6 <br />
 This process of setting up the MSP420G2553 to activate hardware serial and I2c protocol is not largely documented, so I felt this procedure was worth noting.  
 	After the data from the MPU6050’s registers are read into the MSP430, the roll and pitch are calculated.  The code allows for a dead zone of up to ten degrees from level.  This lets the user have a region where the mouse movement will stop and the user can read and/or wait for a dwell click execution.  As the ten degree threshold is exceeded, the mouse will move in the according direction.  This threshold range can be easily altered by changing the trig variable in the MSP430’s code.  The larger the value, the bigger the dead zone range.  This is helpful for users who experience bodily tremors and require a larger amount of idle space.
 There are four output pins on the MSP430.  Each pin is mapped to a specific direction +roll, -roll, +pitch and -pitch.  This will later translate into mouse cursor movement left, right, up, and down  The pins are activated when the threshold is exceeded in that direction or directions.  A maximum of two pins can be active at a time.   These pins are connected to the bases of four NPN transistors.  The emitters are connected to ground and the collectors are connected to the Feather 32U4.
@@ -33,13 +33,14 @@ The Adafruit Feather 32U4 is a module that can handle many tasks.  This device w
 
 Breadboard for Hands Free Mouse:
 
-## 2	Schematic
+## 2	Breadboard/Schematic
 ![Alt text](images/20180802_145228.jpg)
 ![Alt text](images/20180802_145219.jpg)
 ![Alt text](images/20180802_145203.jpg)
 ![Alt text](images/DIS_Schematic_schem.png)
 
 ## 3	Hands Free Mouse Flowchart
+![Alt text](images/DIS_flowchart.png)
 
 ## 5	Value of the Invention
 This project can provide a world of value to the right user.  A target audience for this hands free mouse would be someone who has limited mobility of their hands or arms.  However, many types of people may find this device useful. 
@@ -50,7 +51,6 @@ Medical alert systems could utilize this device for monitoring if a patient fall
 
 Hands Free Mouse Demo Link: <br />
 https://www.youtube.com/watch?v=s068qIjzAFE
-
 
 # 6	References
 [1] Gorodnichy, D. and Roth, G. (2004). Nouse ‘use your nose as a mouse’ perceptual vision technology for hands-free games and interfaces. Image and Vision Computing, 22(12), pp.931-942.
